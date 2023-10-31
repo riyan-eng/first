@@ -1,4 +1,5 @@
 #! /bin/sh
 git pull origin main
 
-docker-compose up -d --force-recreate
+docker-compose pull
+docker-compose up -d
