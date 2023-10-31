@@ -33,3 +33,10 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: deploy
+      uses: wei/curl@master
+      with:
+        args: http://167.71.202.209:9000/hooks/deploy-first
