@@ -10,7 +10,7 @@ func main() {
 	app := fiber.New()
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, First World. This is new image!")
+		return c.SendString("Hello, First World. This is new image from riyan!")
 	})
 
 	app.Get("/:name", func(c *fiber.Ctx) error {
